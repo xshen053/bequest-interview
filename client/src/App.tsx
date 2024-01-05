@@ -37,7 +37,7 @@ function App() {
   /**
    * We not only get @param data, but the @param serverSeqNum
    * 
-   * Each time server receives a post request, its seqNum increments by 1
+   * Each time server receives a post request and update the data in db, its seqNum increments by 1
    * so if client's seqNum != server's seqNum, it means the client's data was tampered
    * 
    * @effects
